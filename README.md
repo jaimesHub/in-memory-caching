@@ -16,7 +16,11 @@
 - Using RapidAPI for get data
 - Link API: `https://rapidapi.com/vacationist/api/iata-and-icao-codes/`
 
-## 5. Output
+## 5. API for testing
+- `http://localhost:3000/airports` : testing the implementation of read-aside strategy
+- `http://localhost:3000/stats` : checking the statistics of infomation about cache hit/miss...after calling `/airports api`
+
+## 6. Output
 ```
 Server running on http://localhost:3000
 [Mon Sep 04 2023 01:45:54 GMT+0700 (Indochina Time)] Fetch data from API
@@ -37,14 +41,14 @@ GET /airports 304 2.834 ms - -
 GET /stats 200 0.570 ms - 54
 ```
 
-## 6. What I've done with this exercise
+## 7. What I've done with this exercise
 1. Content: List of Airports (Code, name)
 2. Read Aside with TTL
 3. Allow to use libs
 
-Note: 
+`Note:` 
 - Please check all of implemented logics on `./myapp/routes/index.js`
 - My struggles: It is hard to find template APIs to visualize my output because I'm lazy to implement my own database :D
 
-## 7. Next challenge that I want to do
+## 8. Next challenge that I want to do
 - Implementing with `Redis`
